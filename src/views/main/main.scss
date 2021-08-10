@@ -1,0 +1,14 @@
+.Main {
+    height: 100%;
+    display: flex;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+}

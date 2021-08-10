@@ -1,0 +1,11 @@
+.Header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    -webkit-app-region: drag;
+}

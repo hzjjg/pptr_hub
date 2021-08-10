@@ -1,8 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import Views from './views/index'
 
 function render() {
-  ReactDOM.render(<h2>pptr hub</h2>, document.body);
+  ReactDOM.render(<Views />, document.body);
 }
 
 render();
