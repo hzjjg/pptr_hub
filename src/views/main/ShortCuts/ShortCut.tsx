@@ -1,7 +1,8 @@
+import { CompoundButton } from "@fluentui/react";
 import React from "react";
 import './short_cut.scss'
 
-export function ShortCut(props: { name: string, url: string }) {
+export function ShortCut(props: { name: string, url: string, desc: string }) {
 
     function clickShortCut(url: string) {
         fetch(url)
@@ -13,6 +14,6 @@ export function ShortCut(props: { name: string, url: string }) {
     }
 
     return (
-        <div className="ShortCut" onClick={() => clickShortCut(props.url)}> {props.name} </div>
+        <CompoundButton className="ShortCut" secondaryText={props.desc} onClick={() => clickShortCut(props.url)}>{props.name}</CompoundButton>
     )
 }

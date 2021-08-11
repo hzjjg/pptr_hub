@@ -16,6 +16,7 @@ export default function Main() {
                 <Header></Header>
                 <div className="Main__content">
                     <ShortCuts></ShortCuts>
+                    <div className="Main__log"></div>
                 </div>
             </div>
         </div>

@@ -9,6 +9,13 @@
     }
 
     &__content {
+        display: flex;
         flex-grow: 1;
+    }
+
+    &__log{
+        width: 200px;
+        height: 100%;
+        flex-shrink: 0;
     }
 }

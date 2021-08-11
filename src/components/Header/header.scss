@@ -8,24 +8,53 @@
     border-bottom: 1px solid #f0f0f0;
     color: #333;
     padding: 10px 20px;
-    -webkit-app-region: drag;
+    user-select: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% - 120px);
+        height: 100%;
+        -webkit-app-region: drag;
+    }
 
     .win-control {
         position: absolute;
+        z-index: 99;
         display: flex;
         align-items: center;
         top: 0;
         right: 0;
         height: 30px;
-
+        
         &__item {
-            width: 30px;
+            font-size: 12px;
+            width: 40px;
+            height: 100%;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: lightgray;
+            }
 
             &--min {}
 
-            &--max {}
+            &--max {
+                font-size: 18px;
+                padding-bottom: 2px;
+            }
 
-            &--close {}
+            &--close {
+                &:hover {
+                    background-color: red;
+                    color: white;
+                }
+            }
         }
     }
 }

@@ -580,6 +580,145 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fluentui/date-time-utilities@^8.2.2":
+  version "8.2.2"
+  resolved "https://registry.nlark.com/@fluentui/date-time-utilities/download/@fluentui/date-time-utilities-8.2.2.tgz#535d5bb6ee7ccfa8cc774c790e31d3d5d4edbad6"
+  integrity sha1-U11btu58z6jMd0x5DjHT1dTtutY=
+  dependencies:
+    "@fluentui/set-version" "^8.1.4"
+    tslib "^2.1.0"
+
+"@fluentui/dom-utilities@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.nlark.com/@fluentui/dom-utilities/download/@fluentui/dom-utilities-2.1.4.tgz?cache=0&sync_timestamp=1627978008693&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40fluentui%2Fdom-utilities%2Fdownload%2F%40fluentui%2Fdom-utilities-2.1.4.tgz#a8eeaf906cc19f547ae40c662d2776cb2540ea11"
+  integrity sha1-qO6vkGzBn1R65AxmLSd2yyVA6hE=
+  dependencies:
+    "@fluentui/set-version" "^8.1.4"
+    tslib "^2.1.0"
+
+"@fluentui/font-icons-mdl2@^8.1.8":
+  version "8.1.8"
+  resolved "https://registry.nlark.com/@fluentui/font-icons-mdl2/download/@fluentui/font-icons-mdl2-8.1.8.tgz#a6642349391e7cf3ca179bb1eeb4e21c74fc0823"
+  integrity sha1-pmQjSTkefPPKF5ux7rTiHHT8CCM=
+  dependencies:
+    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/style-utilities" "^8.2.2"
+    tslib "^2.1.0"
+
+"@fluentui/foundation-legacy@^8.1.8":
+  version "8.1.8"
+  resolved "https://registry.nlark.com/@fluentui/foundation-legacy/download/@fluentui/foundation-legacy-8.1.8.tgz#7181cb16557e2b5ab5d873af0274b6936bac62fd"
+  integrity sha1-cYHLFlV+K1q12HOvAnS2k2usYv0=
+  dependencies:
+    "@fluentui/merge-styles" "^8.1.4"
+    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/style-utilities" "^8.2.2"
+    "@fluentui/utilities" "^8.2.2"
+    tslib "^2.1.0"
+
+"@fluentui/keyboard-key@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.nlark.com/@fluentui/keyboard-key/download/@fluentui/keyboard-key-0.3.4.tgz#27c95ea9d43d91cc9c64c318feb10986250584cd"
+  integrity sha1-J8leqdQ9kcycZMMY/rEJhiUFhM0=
+  dependencies:
+    tslib "^2.1.0"
+
+"@fluentui/merge-styles@^8.1.4":
+  version "8.1.4"
+  resolved "https://registry.nlark.com/@fluentui/merge-styles/download/@fluentui/merge-styles-8.1.4.tgz#d08035eee47945f48d991ed2555e432d49e892b5"
+  integrity sha1-0IA17uR5RfSNmR7SVV5DLUnokrU=
+  dependencies:
+    "@fluentui/set-version" "^8.1.4"
+    tslib "^2.1.0"
+
+"@fluentui/react-focus@^8.1.10":
+  version "8.1.10"
+  resolved "https://registry.nlark.com/@fluentui/react-focus/download/@fluentui/react-focus-8.1.10.tgz?cache=0&sync_timestamp=1627978012237&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40fluentui%2Freact-focus%2Fdownload%2F%40fluentui%2Freact-focus-8.1.10.tgz#76e01c9d39b21a92a368baecd59602235f5e603d"
+  integrity sha1-duAcnTmyGpKjaLrs1ZYCI19eYD0=
+  dependencies:
+    "@fluentui/keyboard-key" "^0.3.4"
+    "@fluentui/merge-styles" "^8.1.4"
+    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/style-utilities" "^8.2.2"
+    "@fluentui/utilities" "^8.2.2"
+    tslib "^2.1.0"
+
+"@fluentui/react-hooks@^8.2.6":
+  version "8.2.6"
+  resolved "https://registry.nlark.com/@fluentui/react-hooks/download/@fluentui/react-hooks-8.2.6.tgz#cd8676227a373e9108a7d6ecdd83b9c43317bd5a"
+  integrity sha1-zYZ2Ino3PpEIp9bs3YO5xDMXvVo=
+  dependencies:
+    "@fluentui/react-window-provider" "^2.1.4"
+    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/utilities" "^8.2.2"
+    tslib "^2.1.0"
+
+"@fluentui/react-window-provider@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.nlark.com/@fluentui/react-window-provider/download/@fluentui/react-window-provider-2.1.4.tgz?cache=0&sync_timestamp=1627978008240&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40fluentui%2Freact-window-provider%2Fdownload%2F%40fluentui%2Freact-window-provider-2.1.4.tgz#2e8368fd85f9e10062c726b060b146ffc1f916b3"
+  integrity sha1-LoNo/YX54QBixyawYLFG/8H5FrM=
+  dependencies:
+    "@fluentui/set-version" "^8.1.4"
+    tslib "^2.1.0"
+
+"@fluentui/react@^8.27.2":
+  version "8.27.2"
+  resolved "https://registry.nlark.com/@fluentui/react/download/@fluentui/react-8.27.2.tgz#6165aeb20241366fd2203b854921ff833a42353a"
+  integrity sha1-YWWusgJBNm/SIDuFSSH/gzpCNTo=
+  dependencies:
+    "@fluentui/date-time-utilities" "^8.2.2"
+    "@fluentui/font-icons-mdl2" "^8.1.8"
+    "@fluentui/foundation-legacy" "^8.1.8"
+    "@fluentui/merge-styles" "^8.1.4"
+    "@fluentui/react-focus" "^8.1.10"
+    "@fluentui/react-hooks" "^8.2.6"
+    "@fluentui/react-window-provider" "^2.1.4"
+    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/style-utilities" "^8.2.2"
+    "@fluentui/theme" "^2.2.1"
+    "@fluentui/utilities" "^8.2.2"
+    "@microsoft/load-themed-styles" "^1.10.26"
+    tslib "^2.1.0"
+
+"@fluentui/set-version@^8.1.4":
+  version "8.1.4"
+  resolved "https://registry.nlark.com/@fluentui/set-version/download/@fluentui/set-version-8.1.4.tgz#89fa88223f421981427dfd5372d46210045354e8"
+  integrity sha1-ifqIIj9CGYFCff1TctRiEARTVOg=
+  dependencies:
+    tslib "^2.1.0"
+
+"@fluentui/style-utilities@^8.2.2":
+  version "8.2.2"
+  resolved "https://registry.nlark.com/@fluentui/style-utilities/download/@fluentui/style-utilities-8.2.2.tgz#94a21053070a51647ee439bed937f04b6d55b86b"
+  integrity sha1-lKIQUwcKUWR+5Dm+2TfwS21VuGs=
+  dependencies:
+    "@fluentui/merge-styles" "^8.1.4"
+    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/theme" "^2.2.1"
+    "@fluentui/utilities" "^8.2.2"
+    "@microsoft/load-themed-styles" "^1.10.26"
+    tslib "^2.1.0"
+
+"@fluentui/theme@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.nlark.com/@fluentui/theme/download/@fluentui/theme-2.2.1.tgz#7d4b937e101c4aff9fcb65c0aae476458ec8c2a2"
+  integrity sha1-fUuTfhAcSv+fy2XAquR2RY7IwqI=
+  dependencies:
+    "@fluentui/merge-styles" "^8.1.4"
+    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/utilities" "^8.2.2"
+    tslib "^2.1.0"
+
+"@fluentui/utilities@^8.2.2":
+  version "8.2.2"
+  resolved "https://registry.nlark.com/@fluentui/utilities/download/@fluentui/utilities-8.2.2.tgz#9b753ec12341a0015c0e600f4d04833201bba97d"
+  integrity sha1-m3U+wSNBoAFcDmAPTQSDMgG7qX0=
+  dependencies:
+    "@fluentui/dom-utilities" "^2.1.4"
+    "@fluentui/merge-styles" "^8.1.4"
+    "@fluentui/set-version" "^8.1.4"
+    tslib "^2.1.0"
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.nlark.com/@humanwhocodes/config-array/download/@humanwhocodes/config-array-0.5.0.tgz?cache=0&sync_timestamp=1625264021699&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40humanwhocodes%2Fconfig-array%2Fdownload%2F%40humanwhocodes%2Fconfig-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
@@ -607,6 +746,11 @@
   integrity sha1-0Hct4apoCgv7m6LzK0yCjHhXy50=
   dependencies:
     cross-spawn "^7.0.1"
+
+"@microsoft/load-themed-styles@^1.10.26":
+  version "1.10.198"
+  resolved "https://registry.nlark.com/@microsoft/load-themed-styles/download/@microsoft/load-themed-styles-1.10.198.tgz#cd716afbd25bbc716754bc8b8673bb56552ea9ca"
+  integrity sha1-zXFq+9JbvHFnVLyLhnO7VlUuqco=
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -6378,7 +6522,7 @@ tslib@^1.8.1:
   resolved "https://registry.nlark.com/tslib/download/tslib-1.14.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
-tslib@^2.0.3:
+tslib@^2.0.3, tslib@^2.1.0:
   version "2.3.0"
   resolved "https://registry.nlark.com/tslib/download/tslib-2.3.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha1-gDuM2rPhK6WBpMpByIObuw2ssJ4=

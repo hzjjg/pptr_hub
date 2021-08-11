@@ -10,14 +10,67 @@ export function ShortCuts() {
         {
             name: '登录',
             url: `${doamin}/login`,
+            desc: '登录企业后台',
         },
         {
-            name: '远程相机/rtc/root',
-            url: `${doamin}/remote-control/run?feature=remote_control&use_vnc=false&use_unroot=true`
+            name: '远程相机',
+            desc: 'webrtc root',
+            url: `${doamin}/remote-control/run?feature=camera&use_webrtc=true&use_a11y=false`
         },
         {
-            name: 'test',
-            url: `http://www.google.com`
+            name: '远程相机',
+            desc: 'webrtc 辅助权限',
+            url: `${doamin}/remote-control/run?feature=camera&use_webrtc=true&use_a11y=true`
+        },
+        {
+            name: '远程相机',
+            desc: '345 root',
+            url: `${doamin}/remote-control/run?feature=camera&use_webrtc=false&use_a11y=false`
+        },
+        {
+            name: '远程相机',
+            desc: '345 辅助权限',
+            url: `${doamin}/remote-control/run?feature=camera&use_webrtc=false&use_a11y=true`
+        },
+        {
+            name: '观察模式',
+            desc: 'webrtc root',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=true&use_a11y=false`
+        },
+        {
+            name: '观察模式',
+            desc: 'webrtc 辅助权限',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=true&use_a11y=true`
+        },
+        {
+            name: '观察模式',
+            desc: '345 root',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=false&use_a11y=false`
+        },
+        {
+            name: '观察模式',
+            desc: '345 辅助权限',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=false&use_a11y=true`
+        },
+        {
+            name: '远程控制',
+            desc: 'webrtc root',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=true&use_a11y=false`
+        },
+        {
+            name: '远程控制',
+            desc: 'webrtc 辅助权限',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=true&use_a11y=true`
+        },
+        {
+            name: '远程控制',
+            desc: '345 root',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=false&use_a11y=false`
+        },
+        {
+            name: '远程控制',
+            desc: '345 辅助权限',
+            url: `${doamin}/remote-control/run?feature=remote_control&use_webrtc=false&use_a11y=true`
         },
     ]
 
@@ -26,7 +79,7 @@ export function ShortCuts() {
             {
                 shortCuts.map((item) => (
                     <div className="ShortCuts__item" key={item.url}>
-                        <ShortCut name={item.name} url={item.url}></ShortCut>
+                        <ShortCut name={item.name} url={item.url} desc={item.desc}></ShortCut>
                     </div>)
                 )
 
