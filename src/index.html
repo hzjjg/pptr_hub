@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src	'self' 'unsafe-inline' 'unsafe-eval' ">
   <title>pptr hub</title>
   <style>
     html,
@@ -17,6 +18,10 @@
       box-sizing: border-box;
     }
 
+    #app {
+      height: 100%;
+    }
+
     .welcome-page {
       display: flex;
       height: 100%;
@@ -29,9 +34,11 @@
 </head>
 
 <body>
-  <div class="welcome-page">
-    <h1>Welcome</h1>
-    <p>Welcome to pptr hub</p>
+  <div id="app">
+    <div class="welcome-page">
+      <h1>Welcome</h1>
+      <p>Welcome to pptr hub</p>
+    </div>
   </div>
 </body>
 

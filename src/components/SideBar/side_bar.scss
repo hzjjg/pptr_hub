@@ -1,9 +1,27 @@
 .SideBar {
-    width: 80px;
+    width: 65px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #333;
     color: white;
     font-size: 14px;
-    padding: 40px 0 10px 10px;
+    padding: 40px 0 10px 0;
     -webkit-app-region: drag;
+
+    &__avatar {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgrey;
+        border-radius: 50%;
+        color: #333;
+    }
+
+    &__freatures {}
+
+    &__footer {}
 }
