@@ -1,6 +1,6 @@
 {
-  "name": "pptr_hub",
-  "productName": "pptr_hub",
+  "name": "taskhub",
+  "productName": "taskhub",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "pptr_hub"
+            "name": "taskhub"
           }
         },
         {

@@ -8,7 +8,7 @@ export default function Header() {
 
     return (
         <header className="Header">
-            <div className="Header__left">pptr hub</div>
+            <div className="Header__left">Taskhub</div>
             <div className="Header__right"></div>
             {
                 isMacOs ? '' : <div className="win-control">

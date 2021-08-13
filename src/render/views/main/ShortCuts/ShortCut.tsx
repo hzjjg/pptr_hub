@@ -1,15 +1,14 @@
 import { CompoundButton } from "@fluentui/react";
 import React from "react";
+import { request } from "../../utils/request";
 import './short_cut.scss'
 
-export function ShortCut(props: { name: string, url: string, desc: string }) {
+export function ShortCut(props: { name: string, url: string, desc: string }): JSX.Element {
 
     function clickShortCut(url: string) {
-        fetch(url)
+        request(url)
             .then((response) => {
-                return response.json()
-            }).then((data) => {
-                console.log(data);
+                console.log(response);
             })
     }
 
