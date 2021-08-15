@@ -1,4 +1,4 @@
-import ToRequest from "../../../utils/toRequest"
+import ToRequest from "../../utils/toRequest"
 
 const toRequest = ToRequest()
 

@@ -1,4 +1,5 @@
 .SideBar {
+    position: relative;
     width: 65px;
     height: 100%;
     display: flex;
@@ -9,8 +10,7 @@
     color: white;
     font-size: 14px;
     padding: 40px 0 10px 0;
-    -webkit-app-region: drag;
-
+    
     &__avatar {
         height: 40px;
         width: 40px;
@@ -21,8 +21,54 @@
         border-radius: 50%;
         color: #333;
     }
+    
+    &__drap-region div{
+        position: absolute;
+        -webkit-app-region: drag;
+        width: 100%;
+        left: 0;
 
-    &__freatures {}
+        &:nth-child(1){
+            top: 0;
+            height: 40px;
+        }
+
+        &:nth-child(2){
+            top: 80px;
+            height: 50px;
+        }
+
+        &:nth-child(3){
+            top: 260px;
+            height: calc(100% - 260px);
+        }
+    }
+
+    &__features {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .feature{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+        color: #fafafa;
+
+        &:hover{
+            background-color: #444;
+        }
+
+        &__icon{
+            font-size: 24px;
+        }
+
+        &__name{
+            font-size: 12px;
+        }
+    }
 
     &__footer {}
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import request from "../../utils/request";
+import request from "../../../utils/request";
 import { ShortCut } from "./ShortCut";
 import './short_cuts.scss'
 
