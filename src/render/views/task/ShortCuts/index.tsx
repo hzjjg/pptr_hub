@@ -22,7 +22,7 @@ export function ShortCuts() {
             {
                 shortCuts.map((item, index) => (
                     <div className="ShortCuts__item" key={index}>
-                        <ShortCut name={item.name} url={item.url} desc={item.desc}></ShortCut>
+                        <ShortCut task={item}></ShortCut>
                     </div>)
                 )
 

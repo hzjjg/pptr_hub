@@ -20,7 +20,7 @@ const tasks = [
         name: '打开浏览器',
         desc: '就打开浏览器啊',
         url: '/openBrowser',
-        params: {
+        paramsDef: {
             appPath: { label: '浏览器安装路径', type: 'input', default: '' },
             userDir: { label: '用户数据地址', type: 'input' },
             useTempUserDir: { label: '使用临时用户数据', type: 'checkbox', default: true },
@@ -30,7 +30,7 @@ const tasks = [
         name: '登录',
         desc: '就登录啊',
         url: '/login',
-        params: {
+        paramsDef: {
             account: { label: '账号', type: 'input' },
             passowrd: { label: '密码', type: 'input' }
         }
