@@ -8,7 +8,8 @@ import CpRequest from "./cp_request";
  */
 export default function connectTasksServer() {
 
-    const child = fork(path.join(__dirname, '../../task_demo/index.js'))
+    // const child = fork(path.join(__dirname, '../../task_demo/index.js'))
+    const child = fork('/Users/hzj/www/web_test/main_ipc.js')
     CpRequest.getInstance(child)
 
     child.on('exit', (code, signal) => {

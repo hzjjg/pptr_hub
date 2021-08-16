@@ -3,16 +3,26 @@ import React from "react";
 import request from "../../../utils/request";
 import './short_cut.scss'
 
-export function ShortCut(props: { name: string, url: string, desc: string }): JSX.Element {
+type Task = {
+    url: string,
+    name: string,
+    desc: string,
+    params: Record<string | number, any>,
+    paramsDef: Record<string | number, { label: string, type: string, default?: any }>
+}
 
-    function clickShortCut(url: string) {
-        request(`${'task://'}${url}`)
+export function ShortCut(props: { task: Task }): JSX.Element {
+
+    const { url, desc, name, params } = props.task
+
+    function clickShortCut(url: string, params: Record<string | number, any>) {
+        request(`${'task://'}${url}`, params)
             .then((response) => {
                 console.log(response);
             })
     }
 
     return (
-        <CompoundButton className="ShortCut" secondaryText={props.desc} onClick={() => clickShortCut(props.url)}>{props.name}</CompoundButton>
+        <CompoundButton className="ShortCut" secondaryText={desc || ' '} onClick={() => clickShortCut(url, params)}>{name}</CompoundButton>
     )
 }

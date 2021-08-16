@@ -20,7 +20,7 @@ connectTasksServer().then(() => {
     if (url.startsWith('task://')) {
       try {
         const resp = await CpRequest.getInstance().send(url.slice(7), params)
-        console.log(resp);
+        console.log('receive response from child process', resp);
         //如果是task://开头的请求，代理到子进程
         e.reply('response', {
           respId: reqId,
