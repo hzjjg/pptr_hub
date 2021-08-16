@@ -7,7 +7,7 @@ export default function Header() {
     const isMacOs = (window as any).process.platform === 'darwin'
 
     return (
-        <header className="Header">
+        <header className={`Header ${isMacOs ? 'macOs' : ''}`}>
             <div className="Header__left">Taskhub</div>
             <div className="Header__right"></div>
             {
