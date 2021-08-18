@@ -10,7 +10,7 @@
     color: white;
     font-size: 14px;
     padding: 40px 0 10px 0;
-    
+
     &__avatar {
         height: 40px;
         width: 40px;
@@ -21,19 +21,19 @@
         border-radius: 50%;
         color: #333;
     }
-    
-    &__drap-region div{
+
+    &__drap-region div {
         position: absolute;
         -webkit-app-region: drag;
         width: 100%;
         left: 0;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             top: 0;
             height: 120px;
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             top: 260px;
             height: calc(100% - 260px);
         }
@@ -44,26 +44,32 @@
         margin-top: 30px;
     }
 
-    .feature{
-        width: 100%;
-        margin-top: 10px;
+    .feature {
+        width: 55px;
+        border-radius: 8px;
+        margin: 10px auto;
         text-align: center;
         padding: 10px 0;
         cursor: pointer;
         color: #fafafa;
 
-        &:hover{
+        &:hover {
             background-color: #444;
         }
 
-        &__icon{
+        &.active {
+            background-color: #555;
+        }
+
+        &__icon {
             font-size: 24px;
         }
 
-        &__name{
+        &__name {
             font-size: 12px;
         }
     }
 
-    &__footer {}
+    &__footer {
+    }
 }

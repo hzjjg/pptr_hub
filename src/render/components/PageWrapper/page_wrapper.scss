@@ -1,12 +1,12 @@
-.App {
+.PageWrapper {
     height: 100%;
     display: flex;
+    flex-direction: column;
 
-    &__side-bar {
+    &__header {
         flex-shrink: 0;
     }
 
     &__content {
-        flex-grow: 1;
     }
 }

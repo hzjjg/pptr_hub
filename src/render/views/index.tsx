@@ -1,26 +1,30 @@
 import React from "react";
 import './index.scss'
-import Header from "../components/Header"
 import SideBar from "../components/SideBar"
-import Task from "./task";
-import Project from "./project";
-import { RecoilRoot } from "recoil";
+import TaskPage from "./TaskPage";
+import ProjectPage from "./ProjectPage";
+import { useRecoilValue } from "recoil";
+import { curPageState } from "../recoil/app";
+import { PageName } from "../consts";
 
 export default function Views() {
 
+    const curPage = useRecoilValue(curPageState)
+
+    const curPageComponent = {
+        [PageName.task]: <TaskPage></TaskPage>,
+        [PageName.projects]: <ProjectPage></ProjectPage>
+    }[curPage.name]
+
     return (
-        <RecoilRoot>
-            <div className="App">
+        <div className="App">
+            <div className="App__side-bar">
                 <SideBar></SideBar>
-                <div className="App__body">
-                    <Header></Header>
-                    <div className="App__content">
-                        <Task></Task>
-                        {/* <Project></Project> */}
-                    </div>
-                </div>
             </div>
-        </RecoilRoot>
+            <div className="App__content">
+                {curPageComponent}
+            </div>
+        </div>
 
     )
 }
