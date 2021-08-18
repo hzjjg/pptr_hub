@@ -19,6 +19,12 @@
         height: 100%;
         -webkit-app-region: drag;
     }
+    
+    &.macOs {
+        &::before {
+            width: 100%;
+        }
+    }
 
     .win-control {
         position: absolute;

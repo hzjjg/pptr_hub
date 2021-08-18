@@ -9,7 +9,6 @@ export default function SideBar() {
             <div className="SideBar__drap-region">
                 <div></div>
                 <div></div>
-                <div></div>
             </div>
 
             <div className="SideBar__avatar">H</div>
