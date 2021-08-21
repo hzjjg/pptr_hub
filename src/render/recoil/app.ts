@@ -8,6 +8,6 @@ export enum AppAtom {
 export const curPageState = atom({
     key: AppAtom.curPage,
     default: {
-        name: PageName.task
+        name: PageName.projects
     }
 })

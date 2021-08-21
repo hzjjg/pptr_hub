@@ -22,7 +22,20 @@
       height: 100%;
     }
 
-    .welcome-page {
+    .WelcomePage {
+      display: flex;
+      height: 100%;
+    }
+
+    .WelcomePage__side-bar {
+      height: 100%;
+      background-color: rgb(28, 31, 44);
+      width: 65px;
+      flex-shrink: 0;
+    }
+
+    .WelcomePage__body {
+      flex: 1;
       display: flex;
       height: 100%;
       flex-direction: column;
@@ -35,9 +48,11 @@
 
 <body>
   <div id="app">
-    <div class="welcome-page">
-      <h1>Welcome</h1>
-      <p>Welcome to pptr hub</p>
+    <div class="WelcomePage">
+      <div class="WelcomePage__side-bar"></div>
+      <div class="WelcomePage__body">
+        <img src="assets/icon/task.svg">
+      </div>
     </div>
   </div>
 </body>

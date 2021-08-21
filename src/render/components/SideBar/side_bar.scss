@@ -6,9 +6,8 @@
     flex-direction: column;
     flex-shrink: 0;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(28, 31, 44);
     color: white;
-    font-size: 14px;
     padding: 40px 0 10px 0;
 
     &__avatar {
@@ -17,9 +16,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: lightgrey;
-        border-radius: 50%;
-        color: #333;
+        background: no-repeat url('../../../assets/image/task.png') center/contain;
+        color: #ccc;
     }
 
     &__drap-region div {
@@ -54,11 +52,11 @@
         color: #fafafa;
 
         &:hover {
-            background-color: #444;
+            background-color: rgba($color: #fff, $alpha: .08);
         }
 
         &.active {
-            background-color: #555;
+            background-color: rgba($color: #fff, $alpha: .15);
         }
 
         &__icon {
@@ -66,10 +64,9 @@
         }
 
         &__name {
-            font-size: 12px;
+            font-size: 11px;
         }
     }
 
-    &__footer {
-    }
+    &__footer {}
 }
