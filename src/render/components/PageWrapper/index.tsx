@@ -1,6 +1,6 @@
 import { Flex } from '@fluentui/react-northstar'
 import React from 'react'
-// import './page_wrapper.scss'
+import './page_wrapper.scss'
 
 export default function PageWrapper(prop: { header?: JSX.Element, children: JSX.Element }) {
     return (

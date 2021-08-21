@@ -6,7 +6,7 @@
     &__left {
         padding-left: 20px;
         display: flex;
-        width: 300px;
+        width: 400px;
         flex-direction: column;
     }
 
@@ -21,9 +21,9 @@
     }
 
     &__projects {
-        border: 1px solid #f0f0f0;
-        border-radius: 8px;
         flex-grow: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     &__settings {

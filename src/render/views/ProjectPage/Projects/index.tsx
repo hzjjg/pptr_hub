@@ -7,7 +7,7 @@ export default function Projects() {
         <div className="Projects">
             {
                 Array(10).fill({}).map((item) =>
-                    <div className="Project__item">
+                    <div className="Projects__item">
                         <ProjectItem />
                     </div>
                 )
