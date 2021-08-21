@@ -1,9 +1,10 @@
-import React, { CSSProperties } from 'react'
-import './page_wrapper.scss'
+import { Flex } from '@fluentui/react-northstar'
+import React from 'react'
+// import './page_wrapper.scss'
 
 export default function PageWrapper(prop: { header?: JSX.Element, children: JSX.Element }) {
     return (
-        <div className="PageWrapper">
+        <Flex className="PageWrapper" column>
             {prop.header &&
                 <div className="PageWrapper__header">
                     {prop.header}
@@ -12,6 +13,6 @@ export default function PageWrapper(prop: { header?: JSX.Element, children: JSX.
             <div className="PageWrapper__content">
                 {prop.children}
             </div>
-        </div>
+        </Flex>
     )
 }

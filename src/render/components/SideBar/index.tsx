@@ -1,18 +1,18 @@
-import { FontIcon } from '@fluentui/react'
 import React from 'react'
 import { useRecoilState } from 'recoil'
 import { curPageState } from '../../recoil/app'
 import { PageName } from '../../consts'
 import './side_bar.scss'
+import { AppsIcon, MoleculeIcon } from '@fluentui/react-northstar'
 
-const FeatureItem = (prop: { iconName: string, text: string, pageName: PageName }) => {
+const FeatureItem = (prop: { icon: any, text: string, pageName: PageName }) => {
 
     const [curPage, setCurPage] = useRecoilState(curPageState)
 
     return (
         <div className={`feature ${curPage.name === prop.pageName ? 'active' : ''}`} onClick={() => setCurPage({ name: prop.pageName })}>
-            <FontIcon iconName={prop.iconName} className="feature__icon"></FontIcon>
-            <div className="feature__name">{prop.text}</div>
+            {prop.icon}
+            <div className="feature__name" style={{ paddingTop: '5px' }}>{prop.text}</div>
         </div>
     )
 }
@@ -27,10 +27,10 @@ export default function SideBar() {
                 <div></div>
             </div>
 
-            <div className="SideBar__avatar">H</div>
+            <div className="SideBar__avatar"></div>
             <div className={`SideBar__features`}>
-                <FeatureItem iconName="MicrosoftFlowLogo" text="任务" pageName={PageName.task}></FeatureItem>
-                <FeatureItem iconName="CubeShape" text="项目" pageName={PageName.projects}></FeatureItem>
+                <FeatureItem icon={<MoleculeIcon size="large" />} text="任务" pageName={PageName.task}></FeatureItem>
+                <FeatureItem icon={<AppsIcon size="large" />} text="项目" pageName={PageName.projects}></FeatureItem>
             </div>
             <div className="SideBar__footer"></div>
         </div>

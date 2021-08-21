@@ -1,4 +1,5 @@
 import React from "react";
+import './project_page.scss'
 import PageWrapper from "../../components/PageWrapper";
 import Header from "../../components/Header";
 import Projects from "./Projects";
@@ -10,11 +11,17 @@ export default function Project() {
             header={<Header></Header>}
         >
             <div className="ProjectPage">
-                <div className="projects">
-                    <Projects></Projects>
+                <div className="ProjectPage__left">
+                    <h2 className="ProjectPage__title">项目</h2>
+                    <div className="ProjectPage__projects">
+                        <Projects></Projects>
+                    </div>
                 </div>
-                <div className="settings">
-                    <ProjectSettings></ProjectSettings>
+                <div className="ProjectPage__right">
+                    <h2 className="ProjectPage__title">项目设置</h2>
+                    <div className="ProjectPage__settings">
+                        <ProjectSettings></ProjectSettings>
+                    </div>
                 </div>
             </div>
         </PageWrapper>

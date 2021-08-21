@@ -1,5 +1,5 @@
-import { CompoundButton } from "@fluentui/react";
 import React from "react";
+import { Button } from '@fluentui/react-northstar'
 import request from "../../../utils/request";
 import './short_cut.scss'
 
@@ -23,6 +23,6 @@ export function ShortCut(props: { task: Task }): JSX.Element {
     }
 
     return (
-        <CompoundButton className="ShortCut" secondaryText={desc || ' '} onClick={() => clickShortCut(url, params)}>{name}</CompoundButton>
+        <Button content={name} icon="play" iconPosition="after" primary onClick={() => clickShortCut(url, params)} />
     )
 }

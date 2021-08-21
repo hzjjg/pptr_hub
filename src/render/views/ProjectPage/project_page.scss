@@ -1,0 +1,32 @@
+.ProjectPage {
+    height: 100%;
+    display: flex;
+    padding: 10px 10px 20px 10px;
+
+    &__left {
+        padding-left: 20px;
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+    }
+
+    &__right {
+        margin-left: 40px;
+        flex-grow: 1;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__projects {
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        flex-grow: 1;
+    }
+
+    &__settings {
+        flex-grow: 1;
+    }
+}
