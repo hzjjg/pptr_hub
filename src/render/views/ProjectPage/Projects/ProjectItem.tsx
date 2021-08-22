@@ -1,4 +1,4 @@
-import { Card, CardHeader, Flex, Text, CardFooter, Button, StarIcon, DownloadIcon, MoreIcon, CardBody, PlayIcon } from "@fluentui/react-northstar";
+import { Card, Flex, Text, CardFooter, Button, CardBody, PlayIcon, SettingsIcon, TrashCanIcon } from "@fluentui/react-northstar";
 import React, { CSSProperties } from "react";
 
 const style: CSSProperties = {
@@ -19,9 +19,8 @@ export default function ProjectItem() {
                 <Flex space="between">
                     <Button icon={<PlayIcon />} iconOnly />
                     <Flex>
-                        <Button icon={<StarIcon />} iconOnly text title="Favourite" />
-                        <Button icon={<DownloadIcon />} iconOnly text title="Download" />
-                        <Button icon={<MoreIcon />} iconOnly text title="More" />
+                        <Button icon={<SettingsIcon />} iconOnly text title="Settings" />
+                        <Button icon={<TrashCanIcon />} iconOnly text title="More" />
                     </Flex>
                 </Flex>
             </CardFooter>
